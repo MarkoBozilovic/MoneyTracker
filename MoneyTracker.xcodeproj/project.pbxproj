@@ -9,23 +9,29 @@
 /* Begin PBXBuildFile section */
 		8FC69763255DEB45008DA866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC69762255DEB45008DA866 /* AppDelegate.swift */; };
 		8FC69765255DEB45008DA866 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC69764255DEB45008DA866 /* SceneDelegate.swift */; };
-		8FC69767255DEB45008DA866 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC69766255DEB45008DA866 /* ViewController.swift */; };
+		8FC69767255DEB45008DA866 /* MoneyTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC69766255DEB45008DA866 /* MoneyTrackerViewController.swift */; };
 		8FC6976A255DEB45008DA866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC69768255DEB45008DA866 /* Main.storyboard */; };
 		8FC6976D255DEB45008DA866 /* MoneyTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8FC6976B255DEB45008DA866 /* MoneyTracker.xcdatamodeld */; };
 		8FC6976F255DEB49008DA866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FC6976E255DEB49008DA866 /* Assets.xcassets */; };
 		8FC69772255DEB49008DA866 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC69770255DEB49008DA866 /* LaunchScreen.storyboard */; };
+		8FC6977B255E0154008DA866 /* MoneyTrackerObjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC6977A255E0154008DA866 /* MoneyTrackerObjectsViewController.swift */; };
+		8FC69784255E0CB1008DA866 /* AddNewTrackerObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC69783255E0CB1008DA866 /* AddNewTrackerObjectViewController.swift */; };
+		8FC6978A255E15AA008DA866 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC69789255E15AA008DA866 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8FC6975F255DEB45008DA866 /* MoneyTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FC69762255DEB45008DA866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FC69764255DEB45008DA866 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8FC69766255DEB45008DA866 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8FC69766255DEB45008DA866 /* MoneyTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTrackerViewController.swift; sourceTree = "<group>"; };
 		8FC69769255DEB45008DA866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FC6976C255DEB45008DA866 /* MoneyTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoneyTracker.xcdatamodel; sourceTree = "<group>"; };
 		8FC6976E255DEB49008DA866 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FC69771255DEB49008DA866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FC69773255DEB49008DA866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FC6977A255E0154008DA866 /* MoneyTrackerObjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTrackerObjectsViewController.swift; sourceTree = "<group>"; };
+		8FC69783255E0CB1008DA866 /* AddNewTrackerObjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTrackerObjectViewController.swift; sourceTree = "<group>"; };
+		8FC69789255E15AA008DA866 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +64,35 @@
 		8FC69761255DEB45008DA866 /* MoneyTracker */ = {
 			isa = PBXGroup;
 			children = (
-				8FC69762255DEB45008DA866 /* AppDelegate.swift */,
-				8FC69764255DEB45008DA866 /* SceneDelegate.swift */,
-				8FC69766255DEB45008DA866 /* ViewController.swift */,
+				8FC69781255E0585008DA866 /* Model */,
+				8FC6977D255E04A8008DA866 /* Controller */,
 				8FC69768255DEB45008DA866 /* Main.storyboard */,
 				8FC6976E255DEB49008DA866 /* Assets.xcassets */,
 				8FC69770255DEB49008DA866 /* LaunchScreen.storyboard */,
+				8FC69764255DEB45008DA866 /* SceneDelegate.swift */,
+				8FC69762255DEB45008DA866 /* AppDelegate.swift */,
 				8FC69773255DEB49008DA866 /* Info.plist */,
-				8FC6976B255DEB45008DA866 /* MoneyTracker.xcdatamodeld */,
 			);
 			path = MoneyTracker;
+			sourceTree = "<group>";
+		};
+		8FC6977D255E04A8008DA866 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8FC69766255DEB45008DA866 /* MoneyTrackerViewController.swift */,
+				8FC69783255E0CB1008DA866 /* AddNewTrackerObjectViewController.swift */,
+				8FC6977A255E0154008DA866 /* MoneyTrackerObjectsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8FC69781255E0585008DA866 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8FC6976B255DEB45008DA866 /* MoneyTracker.xcdatamodeld */,
+				8FC69789255E15AA008DA866 /* CoreDataManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FC69767255DEB45008DA866 /* ViewController.swift in Sources */,
+				8FC69767255DEB45008DA866 /* MoneyTrackerViewController.swift in Sources */,
+				8FC69784255E0CB1008DA866 /* AddNewTrackerObjectViewController.swift in Sources */,
+				8FC6977B255E0154008DA866 /* MoneyTrackerObjectsViewController.swift in Sources */,
 				8FC6976D255DEB45008DA866 /* MoneyTracker.xcdatamodeld in Sources */,
 				8FC69763255DEB45008DA866 /* AppDelegate.swift in Sources */,
+				8FC6978A255E15AA008DA866 /* CoreDataManager.swift in Sources */,
 				8FC69765255DEB45008DA866 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +320,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MoneyTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,7 +328,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.equalnbgd.MoneyTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,6 +339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MoneyTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -317,7 +347,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.equalnbgd.MoneyTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
